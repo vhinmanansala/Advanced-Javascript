@@ -8,7 +8,7 @@
     };
   }
 
-  function Rectangle(width, height, sample){
+  function Rectangle(width, height){
     var shape = Shape2d.call(this);
 
     shape.sides.push(width, height, width, height);
@@ -22,7 +22,7 @@
 
 
   function Square(sidesLength) {
-    return Rectangle.call(this, sidesLength, 20);
+    return Rectangle.call(this, sidesLength, sidesLength);
   }
 
   var myRect = new Rectangle(5, 4);
